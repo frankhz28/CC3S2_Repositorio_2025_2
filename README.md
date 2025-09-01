@@ -1,1 +1,1 @@
-# Repositorio personal Desarrollo Software 2025 - 2 Actividades
+# Repositorio personal Desarrollo Software 2025 - 2 Actividades y Laboratorios
