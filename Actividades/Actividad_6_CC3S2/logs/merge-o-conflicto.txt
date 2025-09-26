@@ -1,0 +1,4 @@
+Auto-merging main.py
+CONFLICT (content): Merge conflict in main.py
+Automatic merge failed; fix conflicts and then commit the result.
+[main 043b1f5] Resuelve el conflicto de fusión entre la versión main y feature/advanced-feature

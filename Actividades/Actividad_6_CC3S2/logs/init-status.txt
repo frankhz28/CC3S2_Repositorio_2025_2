@@ -1,0 +1,12 @@
+Initialized empty Git repository in /home/frankhz/Ambiente_Desarrollo/Desarrollo_Software/2025-2/Actividades/Actividad_6_CC3S2/.git/
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Actividad6-CC3S2.md
+	README.md
+	logs/
+
+nothing added to commit but untracked files present (use "git add" to track)

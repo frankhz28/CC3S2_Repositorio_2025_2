@@ -1,0 +1,6 @@
+  develop                     e6a7189 Agrega main.py
+* feature/another-new-feature 0695eab Configura la documentación base del repositorio
+  feature/login               e6a7189 Agrega main.py
+  feature/new-feature         e6a7189 Agrega main.py
+  hotfix/bugfix               0695eab Configura la documentación base del repositorio
+  main                        e6a7189 Agrega main.py

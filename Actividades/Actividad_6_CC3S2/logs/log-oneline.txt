@@ -1,0 +1,3 @@
+e6a7189 Agrega main.py
+0695eab Configura la documentación base del repositorio
+12567f5 Commit inicial con README.md
