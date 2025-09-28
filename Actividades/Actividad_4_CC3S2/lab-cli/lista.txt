@@ -1,0 +1,7 @@
+archivo1.txt
+archivo2.txt
+archivo3.doc
+lista.txt
+sesion_redactada.txt
+sesion.txt
+Hola

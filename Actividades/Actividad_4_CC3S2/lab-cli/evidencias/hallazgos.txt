@@ -1,0 +1,8 @@
+-rw-rw-r-- 1 frankhz frankhz   56 Sep 12 12:56 errores.log
+-rw-rw-r-- 1 frankhz frankhz   56 Sep 12 11:18 errores.txt
+errores.txt  lista.txt  test.txt
+archivo3.doc  errores.log  errores.txt  [0m[01;34mevidencias[0m  lista.txt  test.txt
+archivo3.doc  errores.log  errores.txt  [0m[01;34mevidencias[0m  lista.txt  test.txt
+./errores.txt
+archivo3.doc  errores.log  errores.txt  [0m[01;34mevidencias[0m  lista.txt  test.txt
+error: process selection options conflict
