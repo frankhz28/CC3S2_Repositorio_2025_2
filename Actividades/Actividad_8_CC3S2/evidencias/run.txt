@@ -1,0 +1,17 @@
+...                                                                      [100%]
+3 passed, 44 deselected in 0.12s
+.                                                                        [100%]
+1 passed, 46 deselected in 0.11s
+============================= test session starts ==============================
+platform linux -- Python 3.12.3, pytest-8.3.3, pluggy-1.6.0
+rootdir: /home/frankhz/Ambiente_Desarrollo/Desarrollo_Software/2025-2/Actividades/Actividad8/Laboratorio3
+configfile: pytest.ini
+plugins: Faker-38.0.0, cov-5.0.0
+collected 1 item
+
+tests/test_estabilidad_semillas.py 
+Salida Corrida 1: 68.22
+Salida Corrida 2: 68.22
+.
+
+============================== 1 passed in 0.07s ===============================
