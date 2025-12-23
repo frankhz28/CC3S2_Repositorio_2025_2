@@ -1,2 +1,0 @@
-uid=10001(etluser) gid=10001(etluser) groups=10001(etluser)
-etluser

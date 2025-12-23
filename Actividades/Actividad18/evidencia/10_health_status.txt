@@ -1,4 +1,0 @@
-actividad18-airflow-scheduler-1 
-"no-healthcheck"
-actividad18-airflow-webserver-1 "healthy"
-actividad18-postgres-1 "healthy"
