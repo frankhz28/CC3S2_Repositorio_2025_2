@@ -1,0 +1,2 @@
+IMG=etl-app:1.0.0
+DIGEST=etl-app@sha256:a0cc9be8163a3f62645e780dd6ed513f8be3b0dc5ee40a52b04b1c3ca50a4d21

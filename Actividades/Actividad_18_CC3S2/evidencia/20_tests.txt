@@ -1,0 +1,103 @@
+docker compose -f docker-compose.test.yml up --build --exit-code-from sut
+time="2025-12-23T06:32:29-05:00" level=warning msg="/home/frankhz/Ambiente_Desarrollo/Desarrollo_Software/2025-2/Actividades/Actividad18/docker-compose.test.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+#1 [internal] load local bake definitions
+#1 reading from stdin 622B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.06kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for docker.io/library/python:3.12-slim
+#3 DONE 1.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 2B done
+#4 DONE 0.0s
+
+#5 [internal] load build context
+#5 transferring context: 159B done
+#5 DONE 0.0s
+
+#6 [builder 1/4] FROM docker.io/library/python:3.12-slim@sha256:fa48eefe2146644c2308b909d6bb7651a768178f84fc9550dcd495e4d6d84d01
+#6 resolve docker.io/library/python:3.12-slim@sha256:fa48eefe2146644c2308b909d6bb7651a768178f84fc9550dcd495e4d6d84d01 0.1s done
+#6 DONE 0.1s
+
+#7 [builder 2/4] WORKDIR /build
+#7 CACHED
+
+#8 [runtime 4/7] COPY --from=builder /venv /venv
+#8 CACHED
+
+#9 [builder 3/4] COPY requirements.txt .
+#9 CACHED
+
+#10 [runtime 6/7] COPY healthcheck.py ./healthcheck.py
+#10 CACHED
+
+#11 [runtime 2/7] RUN useradd --create-home --uid 10001 etluser
+#11 CACHED
+
+#12 [builder 4/4] RUN apt-get update  && apt-get install -y --no-install-recommends build-essential gcc  && pip install --upgrade pip  && python -m venv /venv  && . /venv/bin/activate  && pip install -r requirements.txt  && apt-get purge -y build-essential gcc  && apt-get autoremove -y  && rm -rf /var/lib/apt/lists/*
+#12 CACHED
+
+#13 [runtime 5/7] COPY pipeline.py ./pipeline.py
+#13 CACHED
+
+#14 [runtime 3/7] WORKDIR /app
+#14 CACHED
+
+#15 [runtime 7/7] COPY data ./data
+#15 CACHED
+
+#16 exporting to image
+#16 exporting layers done
+#16 exporting manifest sha256:9c0ea271a1b941bab85a52ff2f5b3563ac8ef59475f464576788e9b1313a0da4 0.0s done
+#16 exporting config sha256:66e1636af22b91d0e1ea8bc7415248c282796157adc32ba02b71168c67fcca5e 0.0s done
+#16 exporting attestation manifest sha256:99301cbb9845db0bf5adcb024da06cc24342bd991f3d3596e336e3b7689d03a8
+#16 exporting attestation manifest sha256:99301cbb9845db0bf5adcb024da06cc24342bd991f3d3596e336e3b7689d03a8 0.1s done
+#16 exporting manifest list sha256:9b68c2999f7d0c04c59968934a3a87e211e42975d92489bc2fc8a9fb977169eb 0.1s done
+#16 naming to docker.io/library/etl-app:test
+#16 naming to docker.io/library/etl-app:test done
+#16 unpacking to docker.io/library/etl-app:test 0.0s done
+#16 DONE 0.3s
+
+#17 resolving provenance for metadata file
+#17 DONE 0.0s
+ etl-app:test  Built
+ Container actividad18-sut-1  Recreate
+ Container actividad18-sut-1  Recreated
+Attaching to postgres-1, sut-1
+postgres-1  | 
+postgres-1  | PostgreSQL Database directory appears to contain a database; Skipping initialization
+postgres-1  | 
+postgres-1  | 2025-12-23 11:32:32.391 UTC [1] LOG:  starting PostgreSQL 13.23 (Debian 13.23-1.pgdg13+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit
+postgres-1  | 2025-12-23 11:32:32.391 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+postgres-1  | 2025-12-23 11:32:32.391 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+postgres-1  | 2025-12-23 11:32:32.403 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+postgres-1  | 2025-12-23 11:32:32.418 UTC [27] LOG:  database system was shut down at 2025-12-23 11:31:03 UTC
+postgres-1  | 2025-12-23 11:32:32.430 UTC [1] LOG:  database system is ready to accept connections
+[Ksut-1 exited with code 0
+[31m[1mAborting on container exit...[0m
+ Container actividad18-sut-1  Stopping
+ Container actividad18-sut-1  Stopped
+ Container actividad18-postgres-1  Stopping
+postgres-1  | 2025-12-23 11:32:39.410 UTC [1] LOG:  received fast shutdown request
+postgres-1  | 2025-12-23 11:32:39.416 UTC [1] LOG:  aborting any active transactions
+postgres-1  | 2025-12-23 11:32:39.418 UTC [1] LOG:  background worker "logical replication launcher" (PID 33) exited with exit code 1
+postgres-1  | 2025-12-23 11:32:39.418 UTC [28] LOG:  shutting down
+postgres-1  | 2025-12-23 11:32:39.474 UTC [1] LOG:  database system is shut down
+ Container actividad18-postgres-1  Stopped
+[Kpostgres-1 exited with code 0
+docker compose -f docker-compose.test.yml down -v
+time="2025-12-23T06:32:39-05:00" level=warning msg="/home/frankhz/Ambiente_Desarrollo/Desarrollo_Software/2025-2/Actividades/Actividad18/docker-compose.test.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+ Container actividad18-sut-1  Stopping
+ Container actividad18-sut-1  Stopped
+ Container actividad18-sut-1  Removing
+ Container actividad18-sut-1  Removed
+ Container actividad18-postgres-1  Stopping
+ Container actividad18-postgres-1  Stopped
+ Container actividad18-postgres-1  Removing
+ Container actividad18-postgres-1  Removed
+ Network actividad18_backend  Removing
+ Network actividad18_backend  Removed
