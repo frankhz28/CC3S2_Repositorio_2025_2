@@ -1,0 +1,13 @@
+{
+  "variable": [
+    {
+      "port": [
+        {
+          "default": "8080",
+          "description": "Variable migrada desde legacy/config.cfg",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}

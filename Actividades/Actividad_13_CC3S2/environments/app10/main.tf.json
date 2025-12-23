@@ -1,0 +1,26 @@
+{
+    "resource": [
+        {
+            "null_resource": [
+                {
+                    "app10_server": [
+                        {
+                            "provisioner": [
+                                {
+                                    "local-exec": {
+                                        "command": "echo 'Arrancando servidor app10 en red net10' en el puerto 80810'"
+                                    }
+                                }
+                            ],
+                            "triggers": {
+                                "name": "app10",
+                                "network": "net10",
+                                "port": "80810"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

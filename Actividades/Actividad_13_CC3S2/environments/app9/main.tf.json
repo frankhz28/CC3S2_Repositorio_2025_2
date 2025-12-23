@@ -1,0 +1,26 @@
+{
+    "resource": [
+        {
+            "null_resource": [
+                {
+                    "app9_server": [
+                        {
+                            "provisioner": [
+                                {
+                                    "local-exec": {
+                                        "command": "echo 'Arrancando servidor app9 en red net9' en el puerto 8089'"
+                                    }
+                                }
+                            ],
+                            "triggers": {
+                                "name": "app9",
+                                "network": "net9",
+                                "port": "8089"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

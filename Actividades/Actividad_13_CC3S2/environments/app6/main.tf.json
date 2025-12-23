@@ -1,0 +1,26 @@
+{
+    "resource": [
+        {
+            "null_resource": [
+                {
+                    "app6_server": [
+                        {
+                            "provisioner": [
+                                {
+                                    "local-exec": {
+                                        "command": "echo 'Arrancando servidor app6 en red net6' en el puerto 8086'"
+                                    }
+                                }
+                            ],
+                            "triggers": {
+                                "name": "app6",
+                                "network": "net6",
+                                "port": "8086"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

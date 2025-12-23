@@ -1,0 +1,26 @@
+{
+    "resource": [
+        {
+            "null_resource": [
+                {
+                    "app1_server": [
+                        {
+                            "provisioner": [
+                                {
+                                    "local-exec": {
+                                        "command": "echo 'Arrancando servidor app1 en red net1' en el puerto 8081'"
+                                    }
+                                }
+                            ],
+                            "triggers": {
+                                "name": "app1",
+                                "network": "net1",
+                                "port": "8081"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

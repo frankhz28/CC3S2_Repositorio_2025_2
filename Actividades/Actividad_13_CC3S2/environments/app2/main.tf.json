@@ -1,0 +1,26 @@
+{
+    "resource": [
+        {
+            "null_resource": [
+                {
+                    "app2_server": [
+                        {
+                            "provisioner": [
+                                {
+                                    "local-exec": {
+                                        "command": "echo 'Arrancando servidor app2 en red net2' en el puerto 8082'"
+                                    }
+                                }
+                            ],
+                            "triggers": {
+                                "name": "app2",
+                                "network": "net2",
+                                "port": "8082"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

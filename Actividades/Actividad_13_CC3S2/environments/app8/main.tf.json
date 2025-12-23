@@ -1,0 +1,26 @@
+{
+    "resource": [
+        {
+            "null_resource": [
+                {
+                    "app8_server": [
+                        {
+                            "provisioner": [
+                                {
+                                    "local-exec": {
+                                        "command": "echo 'Arrancando servidor app8 en red net8' en el puerto 8088'"
+                                    }
+                                }
+                            ],
+                            "triggers": {
+                                "name": "app8",
+                                "network": "net8",
+                                "port": "8088"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
