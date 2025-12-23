@@ -1,0 +1,13 @@
+$ ./scripts/minikube_smoke.sh user-service 8000 default
+[i] smoke: user-service/default -> http://127.0.0.1:8000
+[i] Esperando pod Running para user-service...
+[i] Pod encontrado: user-service-5df59d4568-7q4fb
+[i] Verificando /health...
+[OK] SMOKE user-service -> 200
+
+$ ./scripts/minikube_smoke.sh order-service 8001 default
+[i] smoke: order-service/default -> http://127.0.0.1:8001
+[i] Esperando pod Running para order-service...
+[i] Pod encontrado: order-service-86788c65d6-66vdp
+[i] Verificando /health...
+[OK] SMOKE order-service -> 200

@@ -1,0 +1,37 @@
+# Comandos utilizados
+
+# 1. Preparar entorno y variables
+make env SERVICE=user-service
+make env SERVICE=order-service
+
+# 2. Levantar Minikube (si no está corriendo)
+make minikube-up
+
+# 3. Build de imágenes locales
+make build SERVICE=user-service
+make build SERVICE=order-service
+
+# 4. Pruebas de integración con docker-compose
+make test SERVICE=user-service
+make test SERVICE=order-service
+
+# 5. Generar SBOM/SCA
+make sbom SERVICE=user-service
+make sbom SERVICE=order-service
+make scan SERVICE=user-service
+make scan SERVICE=order-service
+
+# 6. Preparar manifiestos parametrizados
+make k8s-prepare SERVICE=user-service
+make k8s-prepare SERVICE=order-service
+
+# 7. Aplicar manifiestos en el clúster
+make k8s-apply SERVICE=user-service
+make k8s-apply SERVICE=order-service
+
+# 8. Smoke tests en Minikube
+make smoke SERVICE=user-service
+make smoke SERVICE=order-service
+
+# 9. Mostrar recursos y artefactos
+./scripts/muestra_salidas.sh

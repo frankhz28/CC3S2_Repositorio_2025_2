@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+set -euo pipefail
+SERVICE="${SERVICE:-order-service}"
+SCAN_FAIL_SEVERITY="${SCAN_FAIL_SEVERITY:-high}"
+COSIGN_VERIFY="${COSIGN_VERIFY:-0}"
+echo "[PIPELINE] Iniciando pipeline para $SERVICE"
+make pipeline SERVICE="$SERVICE" SCAN_FAIL_SEVERITY="$SCAN_FAIL_SEVERITY" COSIGN_VERIFY="$COSIGN_VERIFY"
+echo "[PIPELINE] Finalizado para $SERVICE"
